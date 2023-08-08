@@ -22,8 +22,8 @@
         <meta  property="og:description" content="Volt Laravel Admin Dashboard features dozens of UI components and a Laravel backend with Livewire & Alpine.js"></meta>
         <meta  property="og:site_name" content="Themesberg"></meta>
     @endif
-
     <!-- Favicons -->
+    <title>   @yield('title')</title>
     <link rel="apple-touch-icon" href="../../assets/img/favicon/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="../../assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="../../assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -55,9 +55,8 @@
     <link type="text/css" href="/css/volt.css" rel="stylesheet">
     <link type="text/css" href="/css/style.css" rel="stylesheet">
 
-    @livewireStyles
 
-    @livewireScripts
+    
 
     <!-- Core -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -107,7 +106,6 @@
 
 <body>
    
-    {{ $slot }}
     @yield('content')
 
 </body>

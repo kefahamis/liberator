@@ -1,0 +1,51 @@
+.lib-wrapper {
+    min-height: 800px;
+    gap: 190px;
+}
+
+.lib-wrapper h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-start {
+    background: #4b8e8d;
+    border-color: #4b8e8d;
+    border-radius: 0;
+    width: 20%;
+}
+
+.navs li {
+    list-style: none;
+}
+
+.btn-programs {
+    background: #2699FB;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 0;
+}
+
+.navbar-dashboard {
+    border-radius: 0;
+    background: #4b8e8d;
+}
+
+.content {
+    padding: 0 0 0 0;
+}
+
+.signup {
+    color: #0086F8;
+
+}
+
+strong {
+    font-weight: 700;
+}
+
+.btn-signup {
+    background: #2699FB;
+    padding: 20px;
+    border: 0;
+}

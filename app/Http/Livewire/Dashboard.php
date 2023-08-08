@@ -10,4 +10,17 @@ class Dashboard extends Component
     {
         return view('dashboard');
     }
+    public function enroll()
+    {
+        return view('enroll');
+    }
+    public function download()
+    {
+        return view('download');
+    }
+    public function explore()
+    {
+        return view('exploreprogram');
+    }
+    
 }
