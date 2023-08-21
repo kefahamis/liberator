@@ -41,7 +41,8 @@ use App\Http\Controllers\HomeController;
 // Route::redirect('/', '/home');
 
 Route::get('/register', Register::class)->name('register');
-Route::get('/', [HomeController::class, 'index']);
+// Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'landing']);
 Route::get('/book', [HomeController::class, 'book']);
 Route::get('/explore', [HomeController::class, 'explore']);
 Route::get('/start', [HomeController::class, 'start']);
@@ -56,12 +57,12 @@ Route::get('/reset-password/{id}', ResetPassword::class)->name('reset-password')
 Route::get('/404', Err404::class)->name('404');
 Route::get('/500', Err500::class)->name('500');
 // Route::get('/upgrade-to-pro', UpgradeToPro::class)->name('upgrade-to-pro');
-
+    // Route::get('/explore',[Dashboard::class, 'explore'])->name('explore');
 Route::middleware('auth')->group(function () {
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/enroll',[Dashboard::class, 'enroll'])->name('enroll');
     Route::get('/downloads',[Dashboard::class, 'download'])->name('downloads');
-    Route::get('/explore',[Dashboard::class, 'explore'])->name('explore');
+
     Route::get('/profile-example', ProfileExample::class)->name('profile-example');
     Route::get('/users', Users::class)->name('users');
     Route::get('/login-example', LoginExample::class)->name('login-example');

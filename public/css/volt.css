@@ -5365,7 +5365,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #E5E7EB;
+  background-color:transparent;
   border-radius: 0.5rem; }
 
 .breadcrumb-item + .breadcrumb-item {

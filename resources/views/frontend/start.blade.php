@@ -13,7 +13,7 @@
     </div>
     <ul class="d-flex justify-content-between navs">
         <li><a href="#" class="btn-skip">Skip</a></li>
-        <li><a href="/start" class="btn-skip">Next</a></li>
+        <li><a href="/login" class="btn-skip">Next</a></li>
     </ul>
 </div>
 @endsection
