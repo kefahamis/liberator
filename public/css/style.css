@@ -123,3 +123,30 @@ ul {
 .heading-title{
     margin-top: 40px;
 }
+.search-wrap{
+    width:auto;
+}
+.search-wrap #form1{
+width:450px;
+border-radius: 2px;
+}
+.search-wrap button{
+    margin-left: -3.062rem !important;
+    background: transparent;
+border: 0;
+}
+.search-wrap button i{
+    color: #0086F8;
+}
+.navbar-nav .nav-link span{
+    padding-left: 10px;
+}
+.prev,.next{
+    background: transparent;
+border: 0;
+box-shadow: 0px 0px 0px;
+}
+.prev i,.next i{
+    font-size: 36px;
+    color: #000;
+}

@@ -17,34 +17,36 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
+
+            <!-- <form class="d-flex ms-auto">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
+            <div class="input-group search-wrap ms-auto">
+                <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" placeholder="What do you want to learn?"/>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Find your New Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+</svg></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg><span>John Doe</span></a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -196,10 +198,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <i class="bi bi-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                    <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -331,10 +333,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                        <i class="fa fa-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -466,10 +468,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                    <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -634,10 +636,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                    <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -782,10 +784,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                    <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -917,10 +919,10 @@
                 <!-- next and previous -->
                 <div class="d-flex justify-content-between cont-slide-nav-wrap">
                     <a class="btn btn-primary mb-3 mr-1 prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-chevron-left"></i>
                     </a>
                     <a class="btn btn-primary mb-3 next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
+                    <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
