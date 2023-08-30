@@ -1,3 +1,23 @@
+.navbar-brand {
+    font-weight: 800;
+    font-size: 20px;
+}
+.top-bar .active{
+   position: relative;
+}
+.top-bar .active:after{
+    content: "";
+    position: absolute;
+    bottom:-7px;
+    left:0;
+    width:100%;
+    height:3px;
+    background-color: #fff;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAYAAADZCo4zAAAACXBIWXMAAAWJAAAFiQFtaJ36AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA7SURBVHgB3ZBBDQAwCAORMglzOAmzMieTgJRSEr79E5r0dZc+agA+u00lIetjpZsXKHhqYfWHJTwJmQBOrZEeFyqriAAAAABJRU5ErkJggg==");
+    background-size: 20%;
+}
 .lib-wrapper {
     min-height: 800px;
     gap: 190px;
@@ -61,7 +81,8 @@ strong {
     color: #fff;
 }
 
-.quick-links,.topics-links {
+.quick-links,
+.topics-links {
     display: flex;
     padding-left: 0;
     gap: 30px;
@@ -73,7 +94,8 @@ ul {
     list-style: none;
 }
 
-.quick-links li,.topics-links li{
+.quick-links li,
+.topics-links li {
 
     padding: 15px 30px;
     background-color: #fff;
@@ -97,7 +119,7 @@ ul {
 
 .wrapper .d-flex {
     background: #000;
-    padding: 15px 0;
+    padding: 7px 0;
 }
 
 .wrapper .d-flex li {
@@ -107,104 +129,140 @@ ul {
 .cont-slide-nav-wrap {
     position: relative;
 }
-.cont-slide-nav-wrap a{
+
+.cont-slide-nav-wrap a {
     position: absolute;
 
 }
-.cont-slide-nav-wrap a.next,.cont-slide-nav-wrap a.prev{
+
+.cont-slide-nav-wrap a.next,
+.cont-slide-nav-wrap a.prev {
     top: -243px;
-} 
-.cont-slide-nav-wrap a.next{
+}
+
+.cont-slide-nav-wrap a.next {
     right: -80px;
 }
+
 .cont-slide-nav-wrap a.prev {
     left: -80px;
 }
-.heading-title{
+
+.heading-title {
     margin-top: 40px;
 }
-.search-wrap{
-    width:auto;
+
+.search-wrap {
+    width: auto;
 }
-.search-wrap #form1{
-width:450px;
-border-radius: 2px;
+
+.search-wrap #form1 {
+    width: 450px;
+    border-radius: 2px;
 }
-.search-wrap button{
+
+.search-wrap button {
     margin-left: -3.062rem !important;
     background: transparent;
-border: 0;
+    border: 0;
 }
-.search-wrap button i{
+
+.search-wrap button i {
     color: #0086F8;
 }
-.navbar-nav .nav-link span{
+
+.navbar-nav .nav-link span {
     padding-left: 10px;
 }
-.prev,.next{
+
+.prev,
+.next {
     background: transparent;
-border: 0;
-box-shadow: 0px 0px 0px;
+    border: 0;
+    box-shadow: 0px 0px 0px;
 }
-.prev i,.next i{
+
+.prev i,
+.next i {
     font-size: 36px;
     color: #000;
 }
-.top-bar{
+
+.top-bar {
     margin-bottom: 0;
 }
-.search-wrap .btn-primary:focus{
+
+.search-wrap .btn-primary:focus {
     background-color: transparent;
-border-color: transparent;
-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(17, 24, 39, 0.075), 0 0 0 0.18rem rgba(65, 73, 85, 0);
+    border-color: transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(17, 24, 39, 0.075), 0 0 0 0.18rem rgba(65, 73, 85, 0);
 }
-.search-wrap .btn-primary:hover{
+
+.search-wrap .btn-primary:hover {
     background-color: transparent;
-border-color: transparent;
+    border-color: transparent;
 }
-.card-img-top{
+
+.card-img-top {
     min-height: 180px;
-background: #D9D9D9;
+    background: #D9D9D9;
 }
-.carousel-control-prev{
+
+.carousel-control-prev {
     left: -120px;
 }
+
 .carousel-control-next {
     right: -120px;
-  }
-  .card-title{
+}
+
+.card-title {
     font-size: 16px;
-  }
-  .carousel-control-next-icon::before {
+}
+
+.carousel-control-next-icon::before {
     content: '\f054';
-  }
-  .carousel-control-prev-icon::before {
+}
+
+.carousel-control-prev-icon::before {
     content: '\f053';
-  }
-  .achievement-wrap{
+}
+
+.achievement-wrap {
     padding-left: 0;
-  }
-  .achievement-wrap li{
+}
+
+.achievement-wrap li {
     font-size: 12px;
     color: #0086F8;
-  }
-  .achievement-wrap li img{
+}
+
+.achievement-wrap li img {
     width: 100%;
-height: 36px;
-  }
-  .company-name{
+    height: 36px;
+}
+
+.company-name {
     margin-top: 30px;
     padding-left: 15px;
-  }
-  .company-name li:first-child{
+}
+
+.company-name li:first-child {
     width: 36px;
-height: 36px;
-background: #d9d9d9;
-  }
-  .company-name li:nth-child(2){
+    height: 36px;
+    background: #d9d9d9;
+}
+
+.company-name li:nth-child(2) {
     padding-left: 10px;
-  }
-  .company-name li{
+}
+
+.company-name li {
     font-size: 12px;
-  }
-  
+}
+
+.explore-btn {
+    background: #0086F8;
+    padding: 8px 40px;
+    border: 0;
+}
