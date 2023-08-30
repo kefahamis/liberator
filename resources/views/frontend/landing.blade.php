@@ -41,6 +41,7 @@
                     <i class="fas fa-search"></i>
                 </button>
             </div>
+            @if(Auth::check())
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
@@ -55,9 +56,20 @@
                     <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg><span>John Doe</span></a>
+                        </svg><span>{{ Auth::user()->first_name }}</span></a>
                 </li>
             </ul>
+            @else
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register" tabindex="-1" aria-disabled="true">Register</a>
+                </li>
+            </ul>
+            @endif
+            
         </div>
     </div>
 </nav>
@@ -1585,7 +1597,7 @@
         <h4 class="text-center mt-3 mb-5">Frequently Asked Questions about Business</h4>
         <!-- FAQs -->
         <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         What are the best business programs?
@@ -1605,7 +1617,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                         What are the best business programs for beginners?
@@ -1617,7 +1629,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                         What are the best business programs for beginners?
@@ -1629,7 +1641,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                         What are the best advanced business programs?
@@ -1641,7 +1653,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                         What does it mean to enroll for a business Program?
@@ -1653,7 +1665,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
                         What are examples of popular careers in business?
@@ -1665,7 +1677,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
                         How can taking business programs on Liberator help my career?
@@ -1677,7 +1689,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingEight">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
                         What skills or experiences do I need to have, before starting to learn business?
@@ -1689,7 +1701,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
                         How do I know if learning business is beneficial and right for me? </button>
@@ -1700,7 +1712,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
                         What type of places hire people with a background in business? </button>
@@ -1711,7 +1723,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
                         What are the career paths for someone in business?</button>
@@ -1722,7 +1734,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item mb-3">
+            <div class="accordion-item mb-4">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
                         What Business Programs are the best for training & up-skilling employees?</button>
