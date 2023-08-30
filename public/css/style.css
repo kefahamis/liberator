@@ -289,7 +289,7 @@ ul {
 }
 
 .heading-title h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
@@ -302,4 +302,7 @@ ul {
 }
 .card-body .btn-primary{
     color: #000;
+}
+.breadcrumb{
+    padding: 0;
 }
