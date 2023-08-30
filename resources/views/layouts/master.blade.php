@@ -73,7 +73,7 @@
     <!-- Volt CSS -->
     <link type="text/css" href="/css/volt.css" rel="stylesheet">
     <link type="text/css" href="/css/style.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
 
@@ -127,7 +127,17 @@
 <body>
 
     @yield('content')
-
+    <script>
+        $(document).ready(function() {
+            $('.dropdown').hover(function() {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').addClass('show');
+            }, function() {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').removeClass('show');
+            });
+        });
+    </script>
 </body>
 
 </html>

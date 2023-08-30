@@ -27,5 +27,17 @@ class HomeController extends Controller
     {
         return view('frontend.start');
     }
+    public function hr()
+    {
+        return view('frontend.human-resource');
+    }
+    public function finance()
+    {
+        return view('frontend.finance');
+    }
+    public function dataScience()
+    {
+        return view('frontend.data-science');
+    }
 
 }

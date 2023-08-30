@@ -21,10 +21,10 @@
                 Explore
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Business</a></li>
-                <li><a class="dropdown-item" href="#">Data, Excel & Power BI</a></li>
-                <li><a class="dropdown-item" href="#">Human Resource</a></li>
-                <li><a class="dropdown-item" href="#">Finance and Environmental Social Governance Institute</a></li>
+                <li><a class="dropdown-item" href="/">Business</a></li>
+                <li><a class="dropdown-item" href="/data-science-and-artificial-intelligence">Data, Excel & Power BI</a></li>
+                <li><a class="dropdown-item" href="/human-resource">Human Resource</a></li>
+                <li><a class="dropdown-item" href="/finance">Finance and Environmental Social Governance Institute</a></li>
             </ul>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -726,7 +726,7 @@
                             <br>
                             You will also get to ask our speaker your questions live during the Q&A session!
                         </p>
-                        <button type="button" class="btn btn-primary">Register Now!</button>
+                        <button type="button" class="btn btn-primary bg-white rounded-0">Register Now!</button>
                     </div>
                 </div>
                 <div class="col-md-4 bg-light">
@@ -742,7 +742,7 @@
                         <h5 class="card-title">Interested in Automating Your<br> Financial Reports?</h5>
                         <p class="card-text">With Liberator for Teams, you can train your employees
                             with world-class content.</p>
-                        <button type="button" class="btn btn-primary">Learn More</button>
+                        <button type="button" class="btn btn-primary bg-white rounded-0">Learn More</button>
 
                     </div>
                 </div>
