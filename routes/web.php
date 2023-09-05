@@ -63,6 +63,7 @@ Route::get('/500', Err500::class)->name('500');
     // Route::get('/explore',[Dashboard::class, 'explore'])->name('explore');
 Route::middleware('auth')->group(function () {
     Route::get('/profile', Profile::class)->name('profile');
+    Route::get('/purchases', [HomeController::class, 'purchases']);
     Route::get('/enroll',[Dashboard::class, 'enroll'])->name('enroll');
     Route::get('/downloads',[Dashboard::class, 'download'])->name('downloads');
 

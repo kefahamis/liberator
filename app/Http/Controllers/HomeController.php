@@ -39,5 +39,9 @@ class HomeController extends Controller
     {
         return view('frontend.data-science');
     }
+    public function purchases()
+    {
+        return view('frontend.purchases');
+    }
 
 }

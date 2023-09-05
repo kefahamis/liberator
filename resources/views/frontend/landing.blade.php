@@ -1,78 +1,7 @@
 @extends('layouts.master')
 @section('content')
-<div class="wrapper">
-    <div class="container">
-        <ul class="d-flex flex-row gap-5 top-bar">
-            <li class="nav-link active" aria-current="page" href="#">For Individuals</li>
-            <li class="nav-link">For Business</li>
-            <li class="nav-link">For University</li>
-        </ul>
-    </div>
 
-</div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Liberator</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="dropdown">
-            <button class="btn btn-info dropdown-toggle explore-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Explore
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="/">Business</a></li>
-                <li><a class="dropdown-item" href="/data-science-and-artificial-intelligence">Data, Excel & Power BI</a></li>
-                <li><a class="dropdown-item" href="/human-resource">Human Resource</a></li>
-                <li><a class="dropdown-item" href="/finance">Finance and Environmental Social Governance Institute</a></li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- <form class="d-flex ms-auto">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-            <div class="input-group search-wrap ms-auto">
-                <div class="form-outline">
-                    <input type="search" id="form1" class="form-control" placeholder="What do you want to learn?" />
-                </div>
-                <button type="button" class="btn btn-primary">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            @if(Auth::check())
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Find your New Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                        </svg></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg><span>{{ Auth::user()->first_name }}</span></a>
-                </li>
-            </ul>
-            @else
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/login" tabindex="-1" aria-disabled="true">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/register" tabindex="-1" aria-disabled="true">Register</a>
-                </li>
-            </ul>
-            @endif
-            
-        </div>
-    </div>
-</nav>
+@include('inc.nav')
 <div class="container-fluid inner-wrap">
     <div class="container">
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
