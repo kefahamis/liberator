@@ -306,3 +306,38 @@ ul {
 .breadcrumb{
     padding: 0;
 }
+.dropdown-divider{
+    height: 2px !important;
+    
+}
+.bg-wrap{
+    background: #0086F8 !important;
+
+}
+.container .help-search button{
+    background: #fff;
+}
+.container .help-search button i{
+    color:#000;
+}
+.card img{
+    display: block;
+  margin: 0 auto;
+}
+.account-page .breadcrumb .breadcrumb-item a{
+    color:#0086F8 !important;
+}
+.account-page .breadcrumb .breadcrumb-item a,.account-page .breadcrumb .breadcrumb-item.active{
+  color: #000;
+  font-size: 20px !important;
+}
+.account-links{
+    margin:0;
+    padding-left: 0;
+}
+.account-links li{
+    line-height: 2.4;
+}
+.account-page strong{
+    font-size: 24px;
+}

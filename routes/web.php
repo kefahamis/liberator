@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CertController;
 use App\Http\Livewire\BootstrapTables;
 use App\Http\Livewire\Components\Buttons;
 use App\Http\Livewire\Components\Forms;
@@ -49,6 +50,7 @@ Route::get('/finance', [HomeController::class, 'finance']);
 Route::get('/data-science-and-artificial-intelligence', [HomeController::class, 'dataScience']);
 Route::get('/explore', [HomeController::class, 'explore']);
 Route::get('/start', [HomeController::class, 'start']);
+Route::get('/helpcentre', [HomeController::class, 'helpcenter']);
 // Route::get('/start', [HomeController::class, 'start']);
 
 Route::get('/login', Login::class)->name('login');
@@ -64,6 +66,12 @@ Route::get('/500', Err500::class)->name('500');
 Route::middleware('auth')->group(function () {
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/purchases', [HomeController::class, 'purchases']);
+    Route::get('/updates', [HomeController::class, 'updates']);
+    Route::get('/accomplishments', [HomeController::class, 'accomplishments']);
+    Route::get('/payment', [HomeController::class, 'payment']);
+    Route::get('/certificate', [CertController::class, 'index']);
+    Route::get('/account', [HomeController::class, 'account']);
+
     Route::get('/enroll',[Dashboard::class, 'enroll'])->name('enroll');
     Route::get('/downloads',[Dashboard::class, 'download'])->name('downloads');
 
