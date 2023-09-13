@@ -79,10 +79,10 @@
                         <a class="dropdown-item d-flex align-items-center" href="/updates">
                             Updates
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center" href="/accomplishments">
                             Accomplishments
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center" href="/helpcentre">
                             Help Centre
                         </a>
                         <a class="dropdown-item d-flex align-items-center">

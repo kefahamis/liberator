@@ -12,44 +12,43 @@ class Login extends Component
     public $email = '';
     public $password = '';
     public $remember_me = false;
-
+    
     protected $rules = [
         'email' => 'required|email:rfc,dns',
         'password' => 'required|min:6',
     ];
 
-    public $redirectTo;
-    public function redirectTo()
-    {
-        switch(Auth::user()->role){
-            case 1:
-            $this->redirectTo = '/admin';
-            return $this->redirectTo;
-                break;
-            case 2:
-                    $this->redirectTo = '/hr';
-                return $this->redirectTo;
-                break;
-            case 3:
-                $this->redirectTo = '/staff';
-                return $this->redirectTo;
-                break;
-            default:
-                $this->redirectTo = '/login';
-                return $this->redirectTo;
-        }
-    }
+    
     //This mounts the default credentials for the admin. Remove this section if you want to make it public.
-    public function mount()
-    {
-        if (auth()->user()) {
-            return redirect()->intended('/dashboard');
-        }
-        $this->fill([
-            'email' => 'hamiskf@gmail.com',
-            'password' => 'secret',
-        ]);
-    }
+    // public function mount()
+    // {
+    //     if (auth()->user()) {
+    //         // return redirect()->intended('/dashboard');
+
+    //         switch (Auth::user()->role) {
+    //             case 1:
+    //                 $this->redirectTo = '/admin';
+    //                 return $this->redirectTo;
+    //                 break;
+    //             case 2:
+    //                 $this->redirectTo = '/hr';
+    //                 return $this->redirectTo;
+    //                 break;
+    //             case 3:
+    //                 $this->redirectTo = '/staff';
+    //                 return $this->redirectTo;
+    //                 break;
+    //             default:
+    //                 $this->redirectTo = '/login';
+    //                 return $this->redirectTo;
+    //         }
+
+    //     }
+    //     $this->fill([
+    //         'email' => 'hamiskf@gmail.com',
+    //         'password' => 'secret',
+    //     ]);
+    // }
 
     public function login()
     {
